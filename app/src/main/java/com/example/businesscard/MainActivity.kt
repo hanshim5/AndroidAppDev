@@ -132,7 +132,7 @@ fun BusinessCardPreview() {
                 ContactInfo(contact = "+00 (00) 000 000", icon = Icons.Default.Call)
                 ContactInfo(contact = "@socialmediahandle", icon = Icons.Default.Share)
                 ContactInfo(contact = "email@domail.com", icon = Icons.Default.Email)
-                Spacer(modifier = Modifier.height(28.dp)) .padding(10.dp)
+                Spacer(modifier = Modifier.height(28.dp).padding(10.dp))
             }
         }
     }
