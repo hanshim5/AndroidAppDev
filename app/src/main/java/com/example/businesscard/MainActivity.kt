@@ -63,7 +63,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun CardLogo(name: String, title: String, modifier: Modifier = Modifier) {
     val image = painterResource(R.drawable.android_logo)
-
     // Column to stack Image above CardName
     Column(verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally,
         modifier = modifier
