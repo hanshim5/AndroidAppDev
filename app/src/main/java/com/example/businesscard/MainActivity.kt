@@ -64,45 +64,45 @@ class MainActivity : ComponentActivity() {
 fun CardLogo(name: String, title: String, modifier: Modifier = Modifier) {
     val image = painterResource(R.drawable.android_logo)
 
-        // Column to stack Image above CardName
-        Column(verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally,
-            modifier = modifier
-                .fillMaxSize()
-                .background(Color(0xFFd3f8d3)
-                )
-        ) {
-            Image(
-                painter = image,
-                contentDescription = null,
-                modifier = Modifier
-                    .size(116.dp)
-                    .border(BorderStroke(1.dp, Color.Black))
-                    .background(Color.DarkGray)
+    // Column to stack Image above CardName
+    Column(verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = modifier
+            .fillMaxSize()
+            .background(Color(0xFFd3f8d3)
             )
+    ) {
+        Image(
+            painter = image,
+            contentDescription = null,
+            modifier = Modifier
+                .size(116.dp)
+                .border(BorderStroke(1.dp, Color.Black))
+                .background(Color.DarkGray)
+        )
 
-            Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(16.dp))
 
-            Text(
-                text = name,
-                fontSize = 42.sp,
-                lineHeight = 16.sp,
-                textAlign = TextAlign.Center,
-                fontWeight = FontWeight.Light,
-                //modifier = Modifier.padding(top = (-8).dp)
+        Text(
+            text = name,
+            fontSize = 42.sp,
+            lineHeight = 16.sp,
+            textAlign = TextAlign.Center,
+            fontWeight = FontWeight.Light,
+            //modifier = Modifier.padding(top = (-8).dp)
 
-                )
-            Spacer(modifier = Modifier.height(16.dp))
-
-            Text(
-                text = title,
-                fontSize = 16.sp,
-                textAlign = TextAlign.Center,
-                fontWeight = FontWeight.Bold,
-
-
-                color = Color(0xFF004100),
             )
-        }
+        Spacer(modifier = Modifier.height(16.dp))
+
+        Text(
+            text = title,
+            fontSize = 16.sp,
+            textAlign = TextAlign.Center,
+            fontWeight = FontWeight.Bold,
+
+
+            color = Color(0xFF004100),
+        )
+    }
 }
 
 @Composable
