@@ -41,7 +41,8 @@ import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.ui.graphics.vector.ImageVector
 
-//Group Members: Hannah Sim, Evan Haut, Justine Cruz
+// Group Members: Hannah Sim, Evan Haut, Justine Cruz
+// I have checked that each team member has completed the lab assignment.
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
