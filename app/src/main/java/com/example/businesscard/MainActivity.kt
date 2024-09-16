@@ -41,6 +41,8 @@ import androidx.compose.material.icons.filled.Email
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.ui.graphics.vector.ImageVector
 
+//Group Members: Hannah Sim, Evan Haut, Justine Cruz
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,10 +66,11 @@ class MainActivity : ComponentActivity() {
 fun CardLogo(name: String, title: String, modifier: Modifier = Modifier) {
     val image = painterResource(R.drawable.android_logo)
     // Column to stack Image above CardName
-    Column(verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally,
+    Column(horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center,
         modifier = modifier
             .fillMaxSize()
-            .background(Color(0xFFd3f8d3)
+            .background(
+                Color(0xFFd3f8d3)
             )
     ) {
         Image(
@@ -85,22 +88,20 @@ fun CardLogo(name: String, title: String, modifier: Modifier = Modifier) {
             text = name,
             fontSize = 42.sp,
             lineHeight = 16.sp,
-            textAlign = TextAlign.Center,
             fontWeight = FontWeight.Light,
-            //modifier = Modifier.padding(top = (-8).dp)
+        )
 
-            )
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(8.dp))
 
         Text(
             text = title,
             fontSize = 16.sp,
-            textAlign = TextAlign.Center,
             fontWeight = FontWeight.Bold,
-
-
             color = Color(0xFF004100),
         )
+
+        Spacer(modifier = Modifier.height(92.dp))
+
     }
 }
 
@@ -131,7 +132,9 @@ fun BusinessCardPreview() {
                 ContactInfo(contact = "+00 (00) 000 000", icon = Icons.Default.Call)
                 ContactInfo(contact = "@socialmediahandle", icon = Icons.Default.Share)
                 ContactInfo(contact = "email@domail.com", icon = Icons.Default.Email)
-                Spacer(modifier = Modifier.height(28.dp).padding(12.dp))
+                Spacer(modifier = Modifier
+                    .height(28.dp)
+                    .padding(12.dp))
             }
         }
     }
